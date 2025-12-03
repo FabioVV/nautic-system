@@ -200,6 +200,8 @@ export class ListRolesComponent {
             { field: 'name', header: 'Cargo' },
         ]
 
+        
+
         this.exportColumns = this.cols.map((col) => ({ title: col.header, dataKey: col.field }))
     }
 

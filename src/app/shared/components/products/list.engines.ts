@@ -377,10 +377,9 @@ export class ListEnginesComponent {
         ]
 
         this.cols = [
-            { field: 'name', header: 'Nome' },
-            { field: 'email', header: 'E-mail' },
-            { field: 'phone', header: 'Telefone' },
-            { field: 'active', header: 'Ativo' }
+            { field: 'model', header: 'Modelo' },
+            { field: 'type', header: 'Tipo' },
+            { field: 'power', header: 'Potencia' },
         ]
 
         this.exportColumns = this.cols.map((col) => ({ title: col.header, dataKey: col.field }))

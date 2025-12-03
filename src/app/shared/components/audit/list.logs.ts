@@ -176,10 +176,11 @@ export class ListLogsComponent {
 
     ngOnInit() {
         this.cols = [
-            { field: 'name', header: 'Nome' },
-            { field: 'email', header: 'E-mail' },
-            { field: 'phone', header: 'Telefone' },
-            { field: 'active', header: 'Ativo' }
+            { field: 'action', header: 'Ação' },
+            { field: 'url', header: 'URL' },
+            { field: 'username', header: 'Usuário' },
+            { field: 'description', header: 'Descrição' },
+            { field: 'created_at', header: 'Registrado em' }
         ];
 
         this.exportColumns = this.cols.map((col) => ({ title: col.header, dataKey: col.field }));
